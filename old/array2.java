@@ -1,0 +1,26 @@
+package old;
+import java.util.*;
+
+public class array2 {
+    @SuppressWarnings("resource")
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();// array size 
+        int numbers[] = new int[size];  // array defined 
+
+        //input 
+        for(int i=0; i<size; i++) {
+            numbers[i] = sc.nextInt();
+        }
+        int x = sc.nextInt();
+
+        //output
+        for(int i=0; i<size; i++) {
+            if(numbers[i] == x) {
+            System.out.println("x found at index: " + i);
+            }
+        }
+        
+    }
+    
+}
